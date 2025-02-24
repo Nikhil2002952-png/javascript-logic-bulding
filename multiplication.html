@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplaction table</title>
+    <script>
+        
+        function multiplaction() {
+           let inputNumber=Number(document.getElementById('inputNumber').value) 
+           let outputDiv= document.getElementById('output')
+           let result =''
+           for (let i = 1; i <=10; i++) {
+         
+        
+                //  document.write(`${i*inputNumber} <br>`)
+                
+                result+= `<p>${i*inputNumber} <br></p>`; 
+            
+           }
+           outputDiv.innerHTML = result;
+         
+        }
+    </script>
+</head>
+<body>
+    <h2>Multiplaction table</h2>
+    <label for="base">Enter Base (Natural Number):</label>
+    <input type="number" id="inputNumber" min="1"><br><br>
+
+    <button onclick="multiplaction()">Calculate</button>
+  
+
+    <div id="output"></div>
+
+    
+    
+    
+    
+    
+<!--     
+    <script>
+    
+        // function calculateExponent() {
+        //     let base =Number(document.getElementById('base').value);
+        //     let outputDiv=document.getElementById('output');
+        //     if (isNaN(base) || base < 1) {
+        //         outputDiv.innerHTML=`<strong> Please enter a valid natural number </strong>`
+        //         return;
+        //     }
+
+        //     let results=''
+        //     for (let i = 1; i <=5; i++) {
+        //         let result=Math.pow(i, base);
+        //         results+= `<p>${base} raised to the power of ${i} is: ${result}</p>`;
+                
+        //     }
+        //     outputDiv.innerHTML = results;
+
+
+        // }
+
+
+     
+    </script> -->
+
+
+</body>
+</html>
